@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { HelloWorld, MyButton, MyInput } from "@/components";
 </script>
 
 <template>
@@ -11,8 +12,16 @@
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <Input></Input>
-  <MyButton></MyButton>
+  <MyButton> hello </MyButton>
+  <MyInput
+    label="firstname"
+    :input-attributes="{
+      placeholder: 'Enter your firstname...',
+      type: 'text',
+      autocomplete: 'given-name',
+    }"
+    >FirstName</MyInput
+  >
 </template>
 
 <style scoped>

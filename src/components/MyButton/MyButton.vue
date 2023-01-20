@@ -1,6 +1,6 @@
 <template>
   <button class="btn" :class="{ primary }">
-    <slot>default button</slot>
+    <slot />
   </button>
 </template>
 
@@ -23,6 +23,7 @@ button {
   padding: 0.6rem 1.25rem;
   background-color: #747bff;
   border: 0;
+  border-radius: 8px;
 }
 button:hover {
   background-color: #535bf2;
