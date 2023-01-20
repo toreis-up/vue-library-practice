@@ -1,6 +1,6 @@
 {
   "name": "@toreis-test/my-test-vue-library-ts",
-  "version": "0.0.0-alpha-rc2",
+  "version": "0.0.0-alpha-rc3",
   "type": "module",
   "files": [
     "dist"
