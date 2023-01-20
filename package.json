@@ -1,0 +1,40 @@
+{
+  "name": "@toreis-test/my-test-vue-library-ts",
+  "private": false,
+  "version": "0.0.0-alpha-rc1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/my-test-vue-library-ts.umd.js",
+  "module": "./dist/my-test-vue-library-ts.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-test-vue-library-ts.es.js",
+      "require": "./dist/my-test-vue-library-ts.umd.js"
+    },
+    "./dist/my-test-vue-library-ts.css": {
+      "import": "./dist/my-test-vue-library-ts.css",
+      "require": "./dist/my-test-vue-library-ts.css"
+    }
+  },
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "path": "^0.12.7",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1",
+    "vue-tsc": "^1.0.11"
+  }
+}
